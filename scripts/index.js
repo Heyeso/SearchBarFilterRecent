@@ -15,11 +15,11 @@ const getInitialItems = () => {
     const value = localStorage.getItem(STORAGE_ID);
     if (value) return JSON.parse(value);
     else {
-      localStorage.setItem(STORAGE_ID, JSON.stringify({ items: [] }));
-      return { items: [] };
+      localStorage.setItem(STORAGE_ID, JSON.stringify({ items: ["heyeso"] }));
+      return { items: ["heyeso"] };
     }
   } catch (err) {
-    return { items: [] };
+    return { items: ["heyeso"] };
   }
 };
 
