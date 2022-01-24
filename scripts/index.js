@@ -24,8 +24,9 @@ const getInitialItems = () => {
 };
 
 const RENDER_ITEMS = (items) => {
-  items.forEach((item) => {
-    if (item !== $search.val()) $recent.append(RECENT_ITEM(item));
+  items.forEach((item, index) => {
+    if (index <= 8)
+      if (item !== $search.val()) $recent.append(RECENT_ITEM(item));
   });
 };
 
@@ -39,11 +40,22 @@ const addItem = () => {
 
 $search.keypress((event) => {
   const keycode = event.keyCode ? event.keyCode : event.which;
-  if (keycode == "13") addItem();
-  $search.focusout();
+  if (keycode == "13") {
+    addItem();
+    $search.val("");
+    $recent.children().remove();
+    $search.focus()
+  }
 });
 
-$button.click(() => addItem());
+$button.click(() => {
+  addItem();
+  $search.val("");
+  $recent.children().remove();
+  $("#search-component").css("border-radius", "25px");
+  $recent.css("display", "none");
+  $search.focusout();
+});
 
 $search.focus(() => {
   const db = getInitialItems();
@@ -62,10 +74,10 @@ $(document).mouseup(function (e) {
     if ($(e.target).closest("#search").length !== 0) {
       $recent.children().remove();
     }
-    $search.focusout();
     $recent.children().remove();
     $("#search-component").css("border-radius", "25px");
     $recent.css("display", "none");
+    $search.focusout();
   }
 });
 
