@@ -1,6 +1,6 @@
 # Search Bar - Recent and Filter
 
-A Simple Search Bar component for projects that need to implement a search-bar. [Search Bar Demo](https://search-bar.web.app/)
+A Simple Search Bar component for projects that need to implement a search-bar. [Demo](https://search-bar.web.app/)
 
 ## Description
 
