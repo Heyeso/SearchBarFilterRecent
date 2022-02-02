@@ -1,0 +1,19 @@
+{
+  "name": "searchbarfilterrecent",
+  "version": "2.0.0",
+  "description": "A Simple Search Bar component for projects that need to implement a search-bar. [View Demo](https://search-bar.web.app/)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heyeso/SearchBarFilterRecent.git"
+  },
+  "author": "Abdulsalam O. Odetayo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heyeso/SearchBarFilterRecent/issues"
+  },
+  "homepage": "https://github.com/Heyeso/SearchBarFilterRecent#readme"
+}
