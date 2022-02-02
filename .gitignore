@@ -7,3 +7,4 @@ deploy.txt
 node_modules
 Demo
 test.js
+.storybook
