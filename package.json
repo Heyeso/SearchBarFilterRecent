@@ -1,5 +1,5 @@
 {
-  "name": "searchbarfilterrecent",
+  "name": "search-bar",
   "version": "2.0.0",
   "description": "A Simple Search Bar component for projects that need to implement a search-bar. [View Demo](https://search-bar.web.app/)",
   "main": "src/index.js",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Heyeso/SearchBarFilterRecent/issues"
   },
-  "homepage": "https://github.com/Heyeso/SearchBarFilterRecent#readme"
+  "homepage": "https://github.com/Heyeso/SearchBarFilterRecent#readme",
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }

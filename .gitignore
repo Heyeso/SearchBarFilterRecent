@@ -4,5 +4,6 @@
 firebase.json
 deploy.txt
 
+node_modules
 Demo
 test.js
